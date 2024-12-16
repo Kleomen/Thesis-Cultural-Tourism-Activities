@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import chaniaSummerFest from '../photos/chania-summer-festival.jpg'
+import cretanDietFest from '../photos/cretan-diet-festival.jpg'
+import discoverBeaches from '../photos/discover-our-beaches.jpg'
+import groupCooking from '../photos/group-cooking.jpg'
+import inn from '../photos/inn.jpg'
+import pottery from '../photos/pottery.png'
+import tripAxos from '../photos/trip-axos-village.jpg'
 
 export const Slider = () => {
 
@@ -11,17 +17,34 @@ export const Slider = () => {
           text: "Chania's Summer Festival takes place between July and September each year and is packed full of attractions. Live performances of the dance, musical and theatrical variety can be enjoyed daily and often attract well-known performers."
         },
         {
-          url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+          url: cretanDietFest,
+          text: (
+            <>
+            <span className="text-red-400">19.00 – 23.00</span>: Local Food Trade Show <br />
+            <span className="text-blue-400">19:15 – 20:30</span>: Young explorers of Flavours, Flagrances and Colours. By Maria Tsouknaki & Flora Asoumanaki <br />
+            <span className="text-green-500">20:45 – 21:15</span>: Arkadi traditional Cretan music and dance school With Konstantinos Markakis music band
+          </>
+          ),
         },
         {
-          url: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80',
-        },
-    
-        {
-          url: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80',
+          url: discoverBeaches,
+          text: "Explore the hidden gems of Crete's stunning beaches your next adventure awaits!"
         },
         {
-          url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80',
+          url: groupCooking,
+          text: "Join our Cretan group cooking experience, where charming local grandmothers share the secrets of traditional recipes passed down for generations!"
+        },
+        {
+          url: inn,
+          text:"Experience the heart of Cretan hospitality stay in a traditional inn where timeless charm meets modern comfort."
+        },
+        {
+          url: pottery,
+          text:"Unleash your creativity with a hands-on pottery-making workshop, guided by skilled Cretan artisans and inspired by ancient traditions!"
+        },
+        {
+          url: tripAxos,
+          text:"Embark on a breathtaking hiking adventure through the charming village of Axos, where nature and tradition blend seamlessly!"
         },
       ];
     
@@ -49,7 +72,7 @@ export const Slider = () => {
       className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
     ></div>
     {/* Text on top of the image */}
-      <div className="absolute top-20 left-10 bg-black/25 text-white px-2 py-1 rounded max-w-[400px]">
+      <div className="absolute top-20 left-15 bg-black/25 text-white px-2 py-1 rounded max-w-[400px]">
           <h2 className="text-4xl font-bold">{slides[currentIndex].text}</h2>
       </div>
     {/* Left Arrow */}
