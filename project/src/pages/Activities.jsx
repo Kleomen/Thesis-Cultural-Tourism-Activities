@@ -1,29 +1,47 @@
 import React from 'react';
+import chaniaSummerFest from '../photos/chania-summer-festival.jpg'
+import cretanDietFest from '../photos/cretan-diet-festival.jpg'
+import discoverBeaches from '../photos/discover-our-beaches.jpg'
+import groupCooking from '../photos/group-cooking.jpg'
+import pottery from '../photos/pottery.png'
+import tripAxos from '../photos/trip-axos-village.jpg'
 
 const events = [
   {
-    title: "Kick Cancer Fundraiser",
+    title: "Chania Summer Festival",
     date: "Tue, Feb 15",
-    location: "500 Terry A Francois Blvd",
-    image: "https://via.placeholder.com/300x200", // Replace with your event image URL
+    location: "Chania outskirts",
+    image: chaniaSummerFest,
   },
   {
-    title: "San Francisco Half Marathon",
+    title: "Cretan Diet Festival",
     date: "Sat, Apr 22",
-    location: "500 Terry A Francois Blvd",
-    image: "https://via.placeholder.com/300x200",
+    location: "Herakleion",
+    image: cretanDietFest,
   },
   {
-    title: "Charity 10k Fun Run",
+    title: "Discover Cretan Beaches",
     date: "Sat, May 7",
-    location: "Mountain View",
-    image: "https://via.placeholder.com/300x200",
+    location: "Chania Elafonisi",
+    image: discoverBeaches,
   },
   {
-    title: "Nevada Country Run",
+    title: "Group Cooking With Elderly",
     date: "Mon, Aug 15",
-    location: "Mountain View",
-    image: "https://via.placeholder.com/300x200",
+    location: "Costelos Village",
+    image: groupCooking,
+  },
+  {
+    title: "Pottery Class",
+    date: "Mon, Aug 22",
+    location: "Rethymno",
+    image: pottery,
+  },
+  {
+    title: "Magical Trip on Axios",
+    date: "Mon, Aug 27",
+    location: "Axios",
+    image: tripAxos,
   },
 ];
 
@@ -43,9 +61,9 @@ const Activities = () => {
             <h3 className="text-xl font-semibold text-gray-800">{event.title}</h3>
             <p className="text-gray-600">{event.date}</p>
             <p className="text-gray-600">{event.location}</p>
-            <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            {/* <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
               Sign Up
-            </button>
+            </button> */}
           </div>
         </div>
       ))}

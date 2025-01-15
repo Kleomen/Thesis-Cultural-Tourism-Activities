@@ -23,7 +23,6 @@ export const NavBar = () => {
         <Link to="/map">Map</Link>
         <Link to="/plan-your-trip">Plan Your Trip</Link>
         <Link to="/experiences">Experiences</Link>
-        <Link to="/language">Language Flag</Link>
 
     </div>
   )
