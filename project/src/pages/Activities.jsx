@@ -6,7 +6,7 @@ import groupCooking from '../photos/group-cooking.jpg'
 import pottery from '../photos/pottery.png'
 import tripAxos from '../photos/trip-axos-village.jpg'
 
-const events = [
+export const events = [
   {
     title: "Chania Summer Festival",
     date: "Tue, Feb 15",

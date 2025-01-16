@@ -2,15 +2,6 @@ import React from "react";
 import { GoogleMap, LoadScript, MarkerF } from "@react-google-maps/api";
 
 const MapComponent = () => {
-  const mapContainerStyle = {
-    width: "100%",
-    height: "500px",
-  };
-
-  const center = {
-    lat: 35.3075, // Latitude for Crete
-    lng: 25.0818, // Longitude for Crete
-  };
 
   const pins = [
     { id: 1, position: { lat: 35.5138, lng: 24.0180 }, label: "Chania" },
@@ -22,8 +13,8 @@ const MapComponent = () => {
   return (
     <LoadScript googleMapsApiKey={process.env.REACT_APP_API_KEY}>
       <GoogleMap
-        mapContainerStyle={mapContainerStyle}
-        center={center}
+        mapContainerStyle={{width: "100%",height: "500px"}}
+        center={{lat: 35.3075,lng: 25.0818}}
         zoom={8}
       >
         {pins.map((pin) => (
