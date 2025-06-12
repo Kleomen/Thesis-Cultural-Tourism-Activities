@@ -5,8 +5,54 @@ import discoverBeaches from '../photos/discover-our-beaches.jpg'
 import groupCooking from '../photos/group-cooking.jpg'
 import pottery from '../photos/pottery.png'
 import tripAxos from '../photos/trip-axos-village.jpg'
+import cretanCraft from '../photos/cretan-craft.jpg'
+import makeDish from '../photos/make-your-dish.jpg'
+import makeJewlerly from '../photos/make-jewelry.jpg'
+import glassBlowing from '../photos/glassblowing.png'
 
-export const events = [
+export const events = [  
+  {
+    title: "Group Cooking With Elderly",
+    date: "Mon, Aug 15",
+    location: "Costelos Village",
+    image: groupCooking,
+  },
+  {
+    title: "Pottery Class",
+    date: "Mon, Aug 22",
+    location: "Rethymno",
+    image: pottery,
+  },
+  {
+    title: "Magical Trip on Axos",
+    date: "Mon, Aug 27",
+    location: "Axios",
+    image: tripAxos,
+  },
+  {
+    title: "Cretan Craft Workshop",
+    date: "Tue, Feb 1",
+    location: "Chania",
+    image: cretanCraft,
+  },
+  {
+    title: "Create Your Own Dish",
+    date: "Mon, Mar 15",
+    location: "Rethymno",
+    image: makeDish,
+  },
+  {
+    title: "Make Your Own Jewelry",
+    date: "Mon, Apr 17",
+    location: "Costelos Village",
+    image: makeJewlerly,
+  },
+  {
+    title: "Learn the art of Glass Blowing",
+    date: "Mon, May 22",
+    location: "Costelos Village",
+    image: glassBlowing,
+  },
   {
     title: "Chania Summer Festival",
     date: "Tue, Feb 15",
@@ -25,30 +71,12 @@ export const events = [
     location: "Chania Elafonisi",
     image: discoverBeaches,
   },
-  {
-    title: "Group Cooking With Elderly",
-    date: "Mon, Aug 15",
-    location: "Costelos Village",
-    image: groupCooking,
-  },
-  {
-    title: "Pottery Class",
-    date: "Mon, Aug 22",
-    location: "Rethymno",
-    image: pottery,
-  },
-  {
-    title: "Magical Trip on Axios",
-    date: "Mon, Aug 27",
-    location: "Axios",
-    image: tripAxos,
-  },
 ];
 
 const Activities = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-    <h2 className="text-3xl font-bold text-center mb-8 text-blue-600">Upcoming Events</h2>
+    <h1 className="section-header">Upcoming Events</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
       {events.map((event, index) => (
         <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">

@@ -6,7 +6,7 @@ const AboutCrete = () => {
       <div className="bg-gray-100 text-gray-800 p-8 space-y-6">
         {/* Introduction Section */}
         <section>
-          <h1 className="text-3xl font-bold text-center mb-4">Discover Crete</h1>
+          <h1 className="section-header">Discover Crete</h1>
           <p>
             Crete, the largest island in Greece, is a vibrant tapestry of ancient history, stunning landscapes, and rich culture. 
             Nestled in the southern part of the Aegean Sea, it offers visitors a unique blend of modern luxury and timeless tradition.
