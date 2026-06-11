@@ -1,0 +1,4 @@
+{
+  "rootDirectory": "project",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
